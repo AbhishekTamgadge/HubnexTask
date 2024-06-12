@@ -66,7 +66,7 @@ if __name__ == '__main__':
         page.goto(url)
         page.wait_for_load_state("networkidle")
         page.evaluate("() => window.scroll(0,document.body.scrollHeight)")
-        page.screenshot(path="Flipkart2.png", full_page=True)
+        #page.screenshot(path="Flipkart2.png", full_page=True)
         flipHtml = page.inner_html("body")
         bs4FlipHtml = BeautifulSoup(flipHtml, "html.parser")
 
